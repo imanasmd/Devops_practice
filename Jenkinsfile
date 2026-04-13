@@ -4,7 +4,7 @@ pipeline{
             stage('code-checkout'){
                 steps{
                     sh """
-echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}" > file.txt
+echo "Running ${env.BUILD_ID} " > file.txt
 """
                 }
                 }
