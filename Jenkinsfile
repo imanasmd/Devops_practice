@@ -2,7 +2,9 @@ pipeline{
     agent any
         stages{
             stage('code-checkout'){
-                steps{}
+                steps{
+                    sh 'cat ./html/index.html'
+                }
                 }
         }
 }
