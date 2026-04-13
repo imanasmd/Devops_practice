@@ -3,7 +3,9 @@ pipeline{
         stages{
             stage('code-checkout'){
                 steps{
-                    sh 'rm -rf *'
+                    sh """
+echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}" > file.txt
+"""
                 }
                 }
         }
