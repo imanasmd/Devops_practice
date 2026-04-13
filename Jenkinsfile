@@ -4,7 +4,7 @@ pipeline{
             stage('code-checkout'){
                 steps{
                     sh """
-echo "Running ${env.BUILD_ID} " > file.txt
+echo "Running ${JOB_NAME}-${BUILD_NUMBER} "
 """
                 }
                 }
